@@ -58,4 +58,17 @@ public class Dao {
 		return false;
 	}
 
+	public boolean checkAdmin(String email, String password) {
+		
+		try {
+			ResultSet rs=st.executeQuery("select * from admin where email='"+email+"' and password='"+password+"'");
+			if(rs.next())
+				return true;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
+
+
 }

@@ -70,6 +70,21 @@ public class Dao {
 		return false;
 	}
 
+	public boolean changeAdminPassword(String email, String password) {
+
+		try {
+			ResultSet rs=st.executeQuery("select * from admin where email='"+email+"'");
+			if(!rs.next()) {
+				return false;
+			}
+			st.execute("update admin set password='"+password+"' where email='"+email+"'");
+			return true;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
+
 public List<String[]> getAvailableFlights(String f, String t, String d) {
 		
 		List<String[]> flights=new ArrayList<>();

@@ -31,9 +31,7 @@ p {
 </style>
 </head>
 <body>
-	<!--  Java inside HTML 
 
- -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container-fluid">
 			
@@ -70,7 +68,14 @@ p {
 		</div>
 	</nav>
 	<h3>Hello From Fly Away!!</h3>
-	
+	<style>
+body {
+  background-image: url('https://wallpaperaccess.com/full/445816.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
 	
 </body>
 </html>

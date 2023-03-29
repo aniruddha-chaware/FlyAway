@@ -54,5 +54,14 @@
 <%
 	}
 %>
+<style>
+body {
+  background-image: url('https://wallpaperaccess.com/full/850499.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+
 </body>
 </html>

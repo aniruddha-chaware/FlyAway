@@ -35,9 +35,9 @@
 </center>
 <br><br>
 <i>New User-Create account</i>
-<h4><a href=UserRegistration.jsp style="font-size:25;color:red;">Create Account</a></h4>
+<h4><a href=UserRegistration.jsp style="font-size:25;color:white;">Create Account</a></h4>
 <br>
-<h4></h4><a href=ForgotPassword.jsp style="font-size:25;color:red;">Forgot Password</a></h4>
+<h4></h4><a href=ForgotPassword.jsp style="font-size:25;color:white;">Forgot Password</a></h4>
 
 <%
 	String message=(String)session.getAttribute("message");
@@ -48,5 +48,13 @@
 		session.setAttribute("message", null);
 	}
 %>
+<style>
+body {
+  background-image: url('https://wallpaperaccess.com/full/850499.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
 </body>
 </html>
